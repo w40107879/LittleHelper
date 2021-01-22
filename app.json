@@ -1,0 +1,24 @@
+{
+	"name": "Line Bot Little Helper",
+	"description": "Help~~",
+	"repository": "https://github.com/w40107879/LittleHelper",
+	"keywords": ["Line", "go", "static"],
+	"buildpacks": [
+	  {
+		"url": "https://github.com/heroku/heroku-buildpack-go"
+	  },
+	  {
+		"url": "heroku/go"
+	  }
+	],
+	"env": {
+	  "ChannelAccessToken": {
+		"description": "Channel Access Token",
+		"required": true
+	  },
+	  "ChannelSecret": {
+		"description": "Channel Secret",
+		"required": true
+	  }
+	}
+  }
